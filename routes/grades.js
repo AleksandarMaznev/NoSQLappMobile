@@ -8,6 +8,7 @@ const router = express.Router();
 
 // Create a new grade (admin or teacher)
 router.post('/', authenticateToken, authorizeRoles(['admin', 'teacher']), async (req, res) => {
+  console.log('entered post route');
   try {
     const { studentId, courseId, assignmentId, score, comment } = req.body;
 

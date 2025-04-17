@@ -24,8 +24,8 @@ app.use(cors());
 app.use(morgan('dev'));
 
 const newUser = {
-  username: 'testuser',
-  password: 'password123', // Will be hashed by the pre-save hook
+  username: 'admin',
+  password: 'admin', // Will be hashed by the pre-save hook
   role: 'admin', // Options: 'admin', 'teacher', 'student'
   email: 'test@example.com',
   firstName: 'Test',
